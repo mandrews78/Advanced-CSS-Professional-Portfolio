@@ -1,0 +1,33 @@
+:root {
+    --white: #fff;
+    --navy-blue: #21215c;
+    --gray: #525258;
+    --border-radius: 50px;
+    
+}
+
+body{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+    justify-content: flex-start;
+}
+h1,
+header {
+    text-align: center;
+    background-color: var(--navy-blue);
+    color: var(--white);
+    
+}
+/*a{
+    text-align: justify right
+    color: 
+}*/
+
+nav a {
+    font-size: 20px;
+    text-align: end;
+    color: var(--white);
+    background-color: var(--navy-blue);
+}
