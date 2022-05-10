@@ -3,31 +3,56 @@
     --navy-blue: #21215c;
     --gray: #525258;
     --border-radius: 50px;
-    
+
 }
 
-body{
+body {
     font-size: 16px;
     display: flex;
     flex-direction: column;
     min-height: auto;
     justify-content: flex-start;
 }
-h1,
+
+h1 {
+    font-size: 100px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
 header {
-    text-align: center;
+    text-align: left;
     background-color: var(--navy-blue);
     color: var(--white);
-    
+
 }
+
 /*a{
     text-align: justify right
     color: 
 }*/
+a,
+nav {
 
-nav a {
-    font-size: 20px;
-    text-align: end;
+    text-align: right;
+    margin-right: 10px;
     color: var(--white);
     background-color: var(--navy-blue);
+}
+
+.card-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+    padding: 2rem;
+    color: var(--gray);
+    outline: 2px;
+    outline-offset: -2px;
+
+
 }
