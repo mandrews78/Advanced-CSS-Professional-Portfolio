@@ -2,57 +2,83 @@
     --white: #fff;
     --navy-blue: #21215c;
     --gray: #525258;
-    --border-radius: 50px;
+    --smoke: #c0b8b8;
+    --light-gray: #7c7777cc;
+}
 
+* {
+    box-sizing: border-box;
 }
 
 body {
-    font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    min-height: auto;
-    justify-content: flex-start;
-}
-
-h1 {
-    font-size: 100px;
-    margin-bottom: 0px;
-}
-
-h2 {
-    font-size: 25px;
-    margin-bottom: 10px;
+    font-family: Arial;
+    margin: 0;
 }
 
 header {
+    padding: 60px;
     text-align: left;
-    background-color: var(--navy-blue);
+    background: var(--navy-blue);
     color: var(--white);
-
 }
 
-/*a{
-    text-align: justify right
-    color: 
-}*/
-a,
 nav {
-
-    text-align: right;
-    margin-right: 10px;
+    list-style: none;
+    display: flex;
+    justify-content:flex-end;
+    background-color: var(--gray);
     color: var(--white);
-    background-color: var(--navy-blue);
 }
 
-.card-title {
+nav a {
+    
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+main {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    min-height: 100%;
-    padding: 2rem;
-    color: var(--gray);
-    outline: 2px;
-    outline-offset: -2px;
+}
 
+aside {
+    flex: 30%;
+    background-color: var(--smoke);
+    color: var(--white);
+    padding: 20px;
+    flex-wrap: wrap;
+}
 
+section {
+    flex: 70%;
+    background-color: var(--light-gray);
+    padding: 20px;
+}
+
+.sample-img {
+    background-color: #fff;
+    width: 100%;
+    padding: 20px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 992px) {
+    header {
+        background: #772014;
+    }
+}
+
+/* Large smartphones - navbar changes color */
+@media screen and (max-width: 768px) {
+    nav {
+        background-color: #bb8588;
+    }
+}
+
+/* Small smartphones - image placeholders change color */
+@media screen and (max-width: 576px) {
+    .sample-img {
+        background-color: #8ac4ff;
+    }
 }
