@@ -1,15 +1,86 @@
 :root {
-    --white: #fff;
-    --navy-blue: #21215c;
-    --gray: #525258;
-    --smoke: #c0b8b8;
-    --light-gray: #7c7777cc;
-    --headerHeight: 60px;
+  --white: #fff;
+  --navy-blue: #21215c;
+  --gray: #525258;
+  --smoke: #c0b8b8;
+  --light-gray: #ebe8e8f5;
+  --carolina: #17c1e7;
+  /* --headerHeight: 60px;
     --middleHeight: 300px;
     --footerHeight: 100px;
+    */
 }
 
-#grid {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li,
+a {
+  display: inline-block;
+  padding: 10px;
+  font-size: 20px;
+  color: var(--white);
+  text-decoration: none;
+  
+}
+nav {
+  display: flex;
+}
+header {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  font-size: x-large;
+  background-color: var(--navy-blue);
+  color: var(--white);
+  vertical-align: baseline;
+}
+
+body {
+  font-family: Book Antiqua, Baskerville Old Face, Franklin Gothic Heavy, Times New Roman;
+  margin: 5px;
+  padding: 0px;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+}
+
+.nav_links li a:hover {
+  color: #17c1e7;
+}
+.sample-img {
+  background-color: var(--light-gray);
+  width: 100%;
+  padding: 10px 10px;
+  height: 200px;
+  border: 1px solid black;
+}
+main {
+  display: flex;
+}
+
+aside {
+  flex: 20%;
+  background-color: var(--gray);
+  text-align: right;
+  padding: 20px;
+}
+
+section {
+  flex: 80%;
+  background-color: var(--smoke);
+  text-align:left;
+  padding: 20px;
+}
+/*#grid {
     display: grid;
     width: 100%;
     grid-template-columns: 400px 10fr;
@@ -32,18 +103,18 @@
 
 #rightarea {
     background-color: var(--smoke);
-}
+}*/
 
-h1 {
+/*h1 {
     font-size: 60px;
 }
 
 h2 {
-    font-size: 30px;
+  font-size: 30px;
 
-    text-align: right;
-    color: var(--white);
-    /*background-color: var(--light-gray);*/
+  text-align: right;
+  color: var(--white);
+  /*background-color: var(--light-gray);
 
 }
 
@@ -57,33 +128,29 @@ header {
 }
 
 .pageleft {
-    padding-right: 10px;
+  padding-right: 10px;
 }
-a,
+
+/*a,
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    color: var(--smoke);
-    margin-right: 25px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  color: var(--smoke);
+  margin-right: 25px;
 
-}
-
-body {
-    margin: 5px ;
-    padding: 0px;
-}
+}*/
 
 div.a {
-    text-align: left;
+  text-align: left;
 }
 
 div.b {
-    text-align: center;
+  text-align: center;
 }
 
 .borderstyle {
-    border-right: solid;
+  border-right: solid;
 }
 
 /*.container div {
@@ -109,58 +176,64 @@ div.b {
 .container{ display: flex;
 flex-wrap: wrap;
 }*/
-.container { 
-    display: grid; 
-    grid-template-columns:  repeat(3, 1fr);  
-    grid-template-rows: repeat(5,100px); 
-    background-color: var(--white);
-    gap: 10px; 
-    grid-template-areas: 'header header header' 
-                         'nav nav nav' 
-                         'aside content content' 
-                         'aside section section' 
-                         'footer footer footer'; 
-  }
-  .container > div { 
-    background-color: var(--navy-blue); 
-    font-size: 40px; 
-  }   
-  #one { 
-    grid-area: header; 
-  } 
-  #two { 
-   grid-area: nav; 
-  }
-  #three { 
-    grid-area: aside; 
-  }     
-  #four { 
-    grid-area: content; 
-  } 
-  #five { 
-    grid-area: section; 
-  }    
-  /*#six { 
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 100px);
+  background-color: var(--white);
+  gap: 10px;
+  grid-template-areas: 'header header header'
+    'nav nav nav'
+    'aside content content'
+    'aside section section'
+    'footer footer footer';
+}
+
+.container>div {
+  background-color: var(--navy-blue);
+  font-size: 40px;
+}
+
+#one {
+  grid-area: header;
+}
+
+#two {
+  grid-area: nav;
+}
+
+#three {
+  grid-area: aside;
+}
+
+#four {
+  grid-area: content;
+}
+
+#five {
+  grid-area: section;
+}
+
+/*#six { 
     grid-area: footer; 
   }*/
-  /* Tablets - header changes color */
+/* Tablets - header changes color */
 @media screen and (max-width: 992px) {
-    header {
-      background: #772014;
-    }
+  header {
+    background: var(--navy-blue);
   }
-  
-  /* Large smartphones - navbar changes color */
-  @media screen and (max-width: 768px) {
-    nav {
-      background-color: #bb8588;
-    }
+}
+
+/* Large smartphones - navbar changes color */
+@media screen and (max-width: 768px) {
+  nav {
+    background-color: var(--gray);
   }
-  
-  /* Small smartphones - image placeholders change color */
-  @media screen and (max-width: 576px) {
-    .sample-img {
-      background-color: #8ac4ff;
-    }
+}
+
+/* Small smartphones - image placeholders change color */
+@media screen and (max-width: 576px) {
+  .sample-img {
+    background-color: #8ac4ff;
   }
-  
+}
