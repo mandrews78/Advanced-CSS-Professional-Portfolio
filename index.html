@@ -2,54 +2,103 @@
 <html lang="en">
 
 <head>
-    <title>Michael's Portfolio</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="Assets/css/style.css" />
+    <title>Michael's Portfolio</title>
+    <link rel="stylesheet" href="Assets/css/style.css" />
+
 </head>
 
 <body>
-    <!-- Header -->
+    <!--Header-->
     <header>
-        <h1>Michael's Portfolio</h1>
+        <div id="logo">
+            <h1>Michael's Portfolio</h1>
+        </div>
+        <!--Navigation Bar-->
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Contact Me</a></li>
+            </ul>
+        </nav>
     </header>
-    <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Resume</a></li>
-        </ul>
-    </nav>
-    <!-- Body -->
+    <!--The Body -->
     <main>
-        
-        <aside>
-            <h2>This is the sidebar</h2>
-            <div class="sample-img">Image</div>
-            About Me
-            Work
-            Contact Me
-            Resume
+        <!--The side-bar menu -->
+        <section id="about-me">
+            <aside>
+                <!--About me section-->
+                <h2>About me</h2>
+                <img src="/Assets/images/myphoto.jpg" class id="myphoto">
+            </aside>
+            <article id="about-content">
+                <p> My name is Michael Andrews. I have about 17 years of experience in Information Technology.
+                    Coding is fun but has also been a challenge for me.
+                    I have a system administration and data center background and have never had to code.
+                    In supporting various linux systems, I have a need to understand coding. Since the Information
+                    Technology industry is moving to mostly cloud based solutions. I decided to challenge
+                    myself and aquire the skill of web development. I hope that this course helps me in my career
+                    growth.
+                </p>
+            </article>
+        </section>
+        <!--Work section-->
+        <section id="work">
+            <aside>
+                <h2>Work</h2>
+            </aside>
+            <div id="work-content">
+                <div id="big">
+                    <img class="bigpic" src="/Assets/Images/pexels-marta-branco-1194713.jpg">
+                    <h3>DIV1</h3>
+                </div>
+                <!--Pictures section-->
+                <div id="pictures">
+                    <div id="one" class="small">
+                        <!--link to password generator that opens in new window-->
+                        <div class="link"
+                            onclick="window.open(`https://mandrews78.github.io/Random-Password-Generator/`)">
+                            <h4>Random Password Generator</h4>
+                        </div>
+                        <img class="smallpic" src="/Assets/Images/pexels-breakingpic-2975.jpg">
+                    </div>
+                    <div id="two" class="small">
 
-        </aside>
+                        <img class="smallpic" src="/Assets/Images/beach2.jpg">
+                    </div>
+                </div>
+                <div id="pictures">
+                    <div id="three" class="small">
+                        <img class="smallpic" src="/Assets/Images/pexels-pixabay-270348.jpg">
 
-        <section>
-            <div class="sample-img">Image</div>
-            <p>My name is Michael Andrews. I have about 17 yearsCoding is fun but has also been a challenge for me. I
-                have a system administrator and data center background and
-                have never had to code. In supporting various linux systems, I have a need to understand coding. Since
-                the Information Technology industry is moving to mostly cloud
-                based solutions. I decided to challenge myself and aquire the skill of coding. I hope that this course
-                helps me in my career path.</p>
-            <br>
-            <div class="sample-img">Image</div>
-            <div class="sample-img">Image</div>
-            <div class="sample-img">Image</div>
+                    </div>
+                    <div id="four" class="small">
+                        <img class="smallpic" src="/Assets/Images/pexels-pixabay-270348.jpg">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--Contact section-->
+        <section id="contact">
+            <aside>
+                <h2>Contact Me</h2>
+            </aside>
+            <div id="contact-me">
+                <li>###-###-####</li>
+                <li>email</li>
+                <li>github</li>
+                <li>Twitter</li>
+                <li>Facebook</li>
+            </div>
         </section>
     </main>
-</body>
+    <footer>
 
+    </footer>
+</body>
 </html>
