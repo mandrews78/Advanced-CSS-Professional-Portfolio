@@ -1,0 +1,253 @@
+* {
+  box-sizing: border-box;
+
+}
+
+:root {
+  --white: #fff;
+  --navy-blue: #21215c;
+  --gray: #4c4c52;
+  --smoke: #8f9191;
+  --light-gray: #ebe8e8f5;
+  --carolina: #17c1e7;
+  --black: #000000;
+}
+
+body {
+  font-family: Book Antiqua, Baskerville Old Face, Franklin Gothic Heavy, Times New Roman;
+  margin: 0px;
+  padding: 0px;
+  border: 10px solid var(--white);
+  height: auto;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--navy-blue);
+  color: var(--white);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  max-width: 100%;
+  height: auto;
+
+}
+
+h1 {
+  margin-left: 40px;
+  line-height: 80px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--navy-blue);
+  padding: 10px 20px;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+}
+
+.nav_links li a:hover {
+  color: #17c1e7;
+}
+
+li,
+a {
+  display: inline-block;
+  padding: 10px;
+  font-size: 20px;
+  color: var(--white);
+  text-decoration: none;
+  text-shadow: 0px 1px 1px var(--gray);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  color: var(--white);
+  font-size: 30px;
+  text-align: right;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+section {
+  background-color: var(--navy-blue);
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 0px 10px
+}
+
+aside {
+  background-color: var(--gray);
+  width: 30%;
+  align-items: center;
+
+}
+
+.bigpic {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.smallpic {
+  max-width: 100%;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#about-content {
+  background-color: var(--smoke);
+  color: var(--white);
+  width: 70%;
+  padding: 10px 10px;
+  text-shadow: 0px 1px 1px var(--gray);
+}
+
+#myphoto {
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+  display: block;
+  margin-left: auto;
+  padding: 10px 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+#work-content {
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: var(--carolina);
+  cursor: pointer;
+}
+
+#big {
+  background-color: var(--smoke);
+  border: 1px solid var(--white);
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#pictures {
+  color: var(--white);
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  text-align: center;
+
+}
+
+.small {
+  width: 50%;
+}
+
+#one {
+  width: 50%;
+  height: 100%;
+  background-color: var(--smoke);
+  border: 1px solid var(--white);
+  text-shadow: 0px 1px 1px var(--gray);
+
+}
+
+#two {
+  position: relative;
+  background-color: var(--smoke);
+  border: 1px solid var(--white);
+  text-shadow: 0px 1px 1px var(--gray);
+}
+
+#three {
+  position: relative;
+  background-color: var(--smoke);
+  border: 1px solid var(--white);
+  text-shadow: 0px 1px 1px var(--gray);
+}
+
+#four {
+  position: relative;
+  background-color: var(--smoke);
+  border: 1px solid var(--white);
+  text-shadow: 0px 1px 1px var(--gray);
+}
+
+.text-block {
+  position: absolute;
+  text-align: center;
+  top: 15px;
+  bottom: 15px;
+  left: 20px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#contact-me {
+  background-color: var(--smoke);
+  color: var(--white);
+  width: 70%;
+  padding: 30px;
+  margin: auto;
+  text-shadow: 0px 1px 1px var(--gray);
+  height: auto;
+}
+
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: var(--navy-blue);
+  color: #fff;
+}
+
+/* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+  header {
+    background: var(--navy-blue);
+  }
+}
+
+/* Large smartphones - navbar changes color */
+@media screen and (max-width: 768px) {
+  nav {
+    background-color: var(--gray);
+  }
+}
+
+/* Small smartphones - image placeholders change color */
+@media screen and (max-width: 576px) {
+  .sample-img {
+    background-color: #8ac4ff;
+  }
+}
