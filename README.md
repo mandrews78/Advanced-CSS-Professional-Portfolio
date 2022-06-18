@@ -1,5 +1,5 @@
 # Advanced-CSS-Professional-Portfolio
-https://github.com/mandrews78/Advanced-CSS-Professional-Portfolio/blob/b78deb97ef810984acec0b2903e73992f5c59615/portfolio_screenshot.png
+![portfolio_screenshot](https://user-images.githubusercontent.com/70594281/174452605-2ab295a1-d091-4d3b-a717-068cf470d127.png)
 
 For this project we were required to create a portfolio page using advanced CSS.
 This portfolio includes my name and photo with a short article about me.
