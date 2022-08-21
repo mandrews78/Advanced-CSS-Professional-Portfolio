@@ -38,10 +38,7 @@ header {
 
 }
 
-h1 {
-  margin-left: 40px;
-  line-height: 80px;
-}
+
 
 nav {
   display: flex;
@@ -280,6 +277,9 @@ footer {
   text-align: center;
   background: var(--navy-blue);
   color: #fff;
+};
+.navbar-brand, .h1{
+  color: black;
 }
 
 /* Tablets - header changes color */
